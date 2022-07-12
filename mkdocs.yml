@@ -20,3 +20,5 @@ nav:
          - Políticas: ./planejamento/politicas.md
    - Pré-Rastreabilidade:
          - Rich Picture: ./preRastreabilidade/richPicture.md
+   - Elicitação - Técnicas e Priorização:
+         - Personas: ./elicitacao/personas.md

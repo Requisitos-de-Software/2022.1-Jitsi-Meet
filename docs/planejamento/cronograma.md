@@ -2,7 +2,7 @@
 
 | Versão | Data  |   Modificação   |             Autor              |
 | ------ | ----- | :-------------: | :----------------------------: |
-| 1.0    | 05/02 | Criação do cronograma |  Gabriel Mariano, Laís Ramos |
+| 1.0    | 29/06 | Criação do cronograma |  Gabriel Mariano, Laís Ramos |
 
 *Tabela 1: versionamento*
 
