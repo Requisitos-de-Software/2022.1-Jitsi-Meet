@@ -21,7 +21,8 @@ nav:
    - Pré-Rastreabilidade:
          - Rich Picture: ./preRastreabilidade/richPicture.md
    - Elicitação - Técnicas e Priorização:
-         - Personas: ./elicitacao/personas.md
+         - Brainstorming: ./elicitacao/brainstorming.md
+         - Personas e Storytelling: ./elicitacao/personas.md
 
 markdown_extensions:
   - attr_list

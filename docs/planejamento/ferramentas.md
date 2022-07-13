@@ -6,7 +6,7 @@
 | ------ | ---------- | :--------------------------: | :----------: |
 | 1.0    | 29/06/2022 | Documentação das ferramentas | Samuel Avila |
 | 1.1    | 05/07/2022 | Correção das imagens         | André Alves  |
-| 1.2    | 06/07 | Revisão do artigo | Gabriel Sabanai |
+| 1.2    | 06/07/2022 | Revisão do artigo | Gabriel Sabanai |
 
 
 _Tabela 1: versionamento_
