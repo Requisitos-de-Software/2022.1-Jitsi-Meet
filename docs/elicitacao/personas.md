@@ -158,7 +158,42 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ## Requisitos Elicitados
 
+Abaixo estão os requisitos elicitados com a técnica do Storytelling utilizando as Personas supracitadas. Note que as personas, na tabela, estão identificadas através da sigla _"P0X"_ (onde o _X_ representa o número da persona), além disso, a antipersona está identificada pela sigla _"AP01"_.
+
+Os requisitos estão identificados sequencialmente pela sigla _"STXX"_ (onde o _XX_ indica a numeração do requisito). Além disso, há a separação dos requisitos em **Funcionais** _(RFXX)_  e em **Não Funcionais** _(RNFXX)_.
+
+<figure>
+
+<img src="../assets/elicitacao/elicitacao_storytelling.png" alt="Elicitação realizada com a técnica Storytelling" style="width:50%">
+<figcaption><b>Elicitação realizada com a técnica Storytelling</b></figcaption>
+
+</figure>
+
 ---
+
+# MosCoW
+
+## Introdução
+
+Aqui teremos uma breve explicação da técnica _MosCoW_
+
+## Gravação
+
+[![Priorização de Requisitos - Storytelling/Personas - Grupo 6 - Jitsi Meet](https://img.youtube.com/vi/Ba2E-jXiS1Y/0.jpg)](https://www.youtube.com/watch?v=Ba2E-jXiS1Y)
+
+## Priorização dos Requisitos Elicitados
+
+Abaixo estão os requisitos elicitados com a técnica do Storytelling e priorizados com a técnica _MosCoW_. A priorização está dividida entre os três termos adotados na técnica: **Must**, **Could** e **Would**.
+
+<figure>
+
+<img src="../assets/elicitacao/priorizacao_storytelling_moscow.png" alt="Priorização realizada com a técnica MosCoW" style="width:50%">
+<figcaption><b>Priorização realizada com a técnica MosCoW</b></figcaption>
+
+</figure>
+
+---
+
 ## Referências
 
 **Cooper, A.; Reimann, R.; Cronin, D.** 2007. "About Face 3: the essentials of interaction design", página 75. Indianapolis: Wiley Publishing, Inc. _Traduzido_.
