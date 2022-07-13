@@ -3,9 +3,11 @@
 | Versão | Data  |   Modificação   |             Autor              |
 | ------ | ----- | :-------------: | :----------------------------: |
 | 1.0    | 13/07/2022 | Criação das Personas |  Gabriel Mariano, Felipe Cândido, Laís Ramos |
+| 1.1    | 13/07/2022 | Introduções das técnicas utilizadas |  Laís Ramos |
 
 ## Introdução
-
+    
+Mendes e Pietrobon (2013, pág.81) versam que  técnica de Storytelling se resume no ato de contar histórias. Essa técnica milenar tem o seu cerne na narrativa, que é um mecanismo de transmissão de conhecimento. Tal prática tem ganhado novos objetivos, sendo aplicado também na Engenharia de Requisitos, auxiliando o processo de levantamento de requisitos.(Winbladh, Ziv e Richardson 2010). No desenvolvimento do projeto em questão utilizou-se o storyteling de forma a forçar a construção de possíveis situações a serem vividas pelo usuário através de pequenas histórias.
 
 # Personas
 
@@ -198,8 +200,13 @@ Os requisitos estão identificados sequencialmente pela sigla _"STXX"_ (onde o _
 # MosCoW
 
 ## Introdução
+Tendo base no repositório da aplicação Triagil,é possível se constatar que o MoSCoW é um método de priorização utilizado para especificar os requisitos de acordo com a sua criticidade e seu valor de negócio. Facilita a priorização do escopo de forma a dividir quais tarefas são de suma importância para o sucesso do projeto e quais poderiam ser descartadas caso o mesmo sofra algum tipo de mudança de prazo e/ou perda de recursos. MoSCoW é um aconimo para as 4 categorias de requisitos utilizados na predileção: **M** de *must have*, **S** de *should have*, **C** de *could have* e **W** de *wont't have ou would like*, como comumente é usado. Portanto, a criticidade e relevância dos requisitos são classificados por:
+* **Must** : Requisitos de extremo interesse para o projeto; sem essas funcionalidades, o produto perde sentido e valor. **Têm** de ser implementados.
+* **Should**: Possuem importância equivalente ao Must, entretanto o seu nível de criticidade para o projeto é menor, ou seja, se não forem desenvolvidos não haverá perda do valor de negócio. **Devem** ser desenvolvidos.
 
-Aqui teremos uma breve explicação da técnica _MosCoW_
+* **Could**: São requisitos ligados À desejos do cliente, que **poderiam**, mas não precisam se desenvolvidos. Geralmente estão relacionados à aperfeiçoamento da experiência do usuário.
+* **Won't/Would Like**: Requisitos inseridos nessa categoria não são necessários para o projeto além de não gerarem tanto valor de negócio. Serão desenvolvidos **talvez** em próximas versões a apenas depois de todos os requisitos das categorias acima serem desenvolvidos.
+Para a priorização dos requisitos do projeto Jitsi Meet foram  utilizados apenas as classificações Must, Could e Would para facilitar o processo de primazia dos requisitos.
 
 ## Gravação
 
@@ -207,7 +214,7 @@ Aqui teremos uma breve explicação da técnica _MosCoW_
 
 ## Priorização dos Requisitos Elicitados
 
-Abaixo estão os requisitos elicitados com a técnica do Storytelling e priorizados com a técnica _MosCoW_. A priorização está dividida entre os três termos adotados na técnica: **Must**, **Could** e **Would**.
+Abaixo estão os requisitos elicitados com a técnica do Storytelling e priorizados com a técnica _MoSCoW_. A priorização está dividida entre os três termos adotados na técnica: **Must**, **Could** e **Would**.
 
 <figure>
 
@@ -222,7 +229,11 @@ Abaixo estão os requisitos elicitados com a técnica do Storytelling e prioriza
 
 **Cooper, A.; Reimann, R.; Cronin, D.** 2007. "About Face 3: the essentials of interaction design", página 75. Indianapolis: Wiley Publishing, Inc. _Traduzido_.
 
+[**MENDES, Tamara M.; PIETROBON, Carlos A. M.**](https://sol.sbc.org.br/index.php/sbqs/article/view/15275/15118) Uso de Storytelling para Apoiar a Gestão de Conhecimento no Desenvolvimento de Software. In: SIMPÓSIO BRASILEIRO DE QUALIDADE DE SOFTWARE (SBQS), 12. , 2013, Salvador. Anais [...]. Porto Alegre: Sociedade Brasileira de Computação, 2013 . p. 81-94.
+
 **U.S. General Services Administration**. “usability.gov: Improving the User Experience”. Disponível em: <https://www.usability.gov/how-to-and-tools/methods/personas.html>. Acesso em 11 jul. 2022.
+
+**Técnica MoSCoW**. Disponível em: <https://unbarqdsw.github.io/2020.1_G1_Triagil/modelagem/extra/priorizacao/moscow/>
 
 ## Fonte das Imagens
 
