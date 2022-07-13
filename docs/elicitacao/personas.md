@@ -2,7 +2,7 @@
 
 | Versão | Data  |   Modificação   |             Autor              |
 | ------ | ----- | :-------------: | :----------------------------: |
-| 1.0    | 12/07/2022 | Criação das Personas |  Gabriel Mariano, Felipe Cândido, Laís Ramos |
+| 1.0    | 13/07/2022 | Criação das Personas |  Gabriel Mariano, Felipe Cândido, Laís Ramos |
 
 ## Introdução
 Aqui vem o texto da introdução à storytelling.
@@ -14,7 +14,7 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ---
 
-## Persona 1: Estudante de Graduação
+### **Persona 1: Estudante de Graduação**
 
 <figure>
 
@@ -41,7 +41,7 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ---
 
-## Persona 2: Professora Universitária
+### **Persona 2: Professora Universitária**
 
 <figure>
 
@@ -69,7 +69,7 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ---
 
-## Persona 3: Empresária do Setor Bancário
+### **Persona 3: Empresária do Setor Bancário**
 
 <figure>
 
@@ -96,7 +96,7 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ---
 
-## Persona 4: Estudante do Ensino Médio
+### **Persona 4: Estudante do Ensino Médio**
 
 <figure>
 
@@ -123,7 +123,7 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ---
 
-## Antipersona: Criança sem Experiência
+### **Antipersona: Criança sem Experiência**
 
 <figure>
 
@@ -150,6 +150,15 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ---
 
+# Elicitação dos Requisitos
+
+## Gravação
+
+[![Elicitação de Requisitos - Storytelling/Personas - Grupo 6 - Jitsi Meet](https://img.youtube.com/vi/OGWxOBh_2kQ/0.jpg)](https://www.youtube.com/watch?v=OGWxOBh_2kQ)
+
+## Requisitos Elicitados
+
+---
 ## Referências
 
 **Cooper, A.; Reimann, R.; Cronin, D.** 2007. "About Face 3: the essentials of interaction design", página 75. Indianapolis: Wiley Publishing, Inc. _Traduzido_.
