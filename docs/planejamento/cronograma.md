@@ -2,13 +2,14 @@
 
 | Versão | Data  |   Modificação   |             Autor              |
 | ------ | ----- | :-------------: | :----------------------------: |
-| 1.0    | 29/06 | Criação do cronograma |  Gabriel Mariano, Laís Ramos |
+| 1.0    | 30/06 | Criação do cronograma |  Gabriel Mariano, Laís Ramos  |
+| 1.1    | 13/07 | Revisäo do cronograma |  Felipe Moura  |
 
 *Tabela 1: versionamento*
 
 ## Introdução
 
-Foi análisado o cronograma do semestre letivo, os prazos da disciplina e a disponibilidade dos integrantes. Dessa forma, foi criado um cronograma que foi dividido em etapas para realizações das atividades e cumprimento dos prazos.
+Foi analisado o cronograma do semestre letivo, os prazos da disciplina e a disponibilidade dos integrantes. Dessa forma, foi criado um cronograma (Imagem 1) que foi dividido em etapas para a realização das atividades e cumprimento dos prazos (Tabela 2), todos baseados no product backlog descrito (Tabela 3).
 
 ## Cronograma de atividades
 
@@ -37,3 +38,5 @@ Foi análisado o cronograma do semestre letivo, os prazos da disciplina e a disp
 ## Product Backlog
 
 ![Product Backlog](../assets/productBacklog.png)
+
+*Tabela 3: Product Backlog*

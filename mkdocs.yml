@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Jitsi Meet
 theme:
    name: material
    features:
@@ -22,3 +22,6 @@ nav:
          - Rich Picture: ./preRastreabilidade/richPicture.md
    - Elicitação - Técnicas e Priorização:
          - Personas: ./elicitacao/personas.md
+
+markdown_extensions:
+  - attr_list
