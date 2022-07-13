@@ -5,7 +5,7 @@
 | 1.0    | 13/07/2022 | Criação das Personas |  Gabriel Mariano, Felipe Cândido, Laís Ramos |
 
 ## Introdução
-Aqui vem o texto da introdução à storytelling.
+
 
 # Personas
 
