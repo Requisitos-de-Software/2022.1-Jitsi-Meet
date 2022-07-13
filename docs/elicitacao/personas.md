@@ -192,10 +192,10 @@ Para a priorização dos requisitos do projeto Jitsi Meet foram  utilizados apen
 
 ## Priorização dos Requisitos Elicitados
 
-Abaixo estão os requisitos elicitados com a técnica do Storytelling e priorizados com a técnica _MoSCoW_. A priorização está dividida entre os três termos adotados na técnica: **Must**, **Could** e **Would**.
+Abaixo estão os requisitos elicitados com a técnica do Storytelling e priorizados com a técnica _MoSCoW_. A priorização está dividida entre os três termos adotados na técnica: **Must**, **Should** e **Could**.
 
-![Priorização realizada com a técnica MosCoW](../assets/elicitacao/priorizacao_storytelling_moscow.png){width="900"}
-*Priorização realizada com a técnica MosCoW* 
+![Priorização realizada com a técnica MoSCoW](../assets/elicitacao/priorizacao_storytelling_moscow.png){width="900"}
+*Priorização realizada com a técnica MoSCoW* 
 
 ---
 
