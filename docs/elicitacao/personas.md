@@ -18,7 +18,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 1: Estudante de Graduação**
 
-![Persona 1: Estudante de Graduação](../assets/personas/persona1.png){width="900"}
+![Persona 1: Estudante de Graduação](../assets/personas/persona1.png){width="500"}
+
 *Persona 1: Estudante de Graduação* 
 
 
@@ -42,7 +43,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 2: Professora Universitária**
 
-![Persona 2: Professora Universitária](../assets/personas/persona2.png){width="900"}
+![Persona 2: Professora Universitária](../assets/personas/persona2.png){width="500"}
+
 *Persona 2: Professora Universitária* 
 
 **Nome Fictício:** Roberta Matarazzo
@@ -67,7 +69,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 ### **Persona 3: Empresária do Setor Bancário**
 
 
-![Persona 3: Empresária do Setor Bancário](../assets/personas/persona3.png){width="900"}
+![Persona 3: Empresária do Setor Bancário](../assets/personas/persona3.png){width="500"}
+
 *Persona 3: Empresária do Setor Bancário* 
 
 **Nome Fictício:** Marcela Hardt
@@ -90,7 +93,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 4: Estudante do Ensino Médio**
 
-![Persona 4: Estudante do Ensino Médio](../assets/personas/persona4.png){width="900"}
+![Persona 4: Estudante do Ensino Médio](../assets/personas/persona4.png){width="500"}
+
 *Persona 4: Estudante do Ensino Médio* 
 
 **Nome Fictício:** Fernanda Maia
@@ -113,7 +117,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Antipersona: Criança sem Experiência**
 
-![Antipersona: Criança sem Experiência](../assets/personas/antipersona.png){width="900"}
+![Antipersona: Criança sem Experiência](../assets/personas/antipersona.png){width="500"}
+
 *Antipersona: Criança sem Experiência* 
 
 **Nome Fictício:** Valentina Meire
