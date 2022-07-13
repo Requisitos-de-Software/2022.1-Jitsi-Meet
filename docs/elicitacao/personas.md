@@ -154,15 +154,15 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ## **Storytelling Utilizando Personas**
 
-O método de elicitação por meio de Storytelling utilizando Persona, consiste em criar uma história envolvendo cada uma das personas, e dessa história abstrair os requisitos necessários para o software. No nosso caso, duas pessoas interpretavam e narravam as histórias, enquanto outra anotava e conduzia a elicitação em si.
+O método de elicitação por meio de Storytelling utilizando Personas consiste em criar uma história envolvendo cada uma das personas e dessa história abstrair os requisitos necessários para o software. No nosso caso, duas pessoas interpretavam e narravam as histórias, enquanto outra anotava e conduzia a elicitação em si.
 
 ### _**Matheus García**_
 
-As aulas da UnB acabaram de voltar, e no primeiro dia,  a professora de calculo 3 mandou os alunos se reunirem em grupos de até 5 pessoas. Após a formação dos grupos, Mateus e seus colegas estavam discutindo como seria feita a comunicação entre eles, visto que nem sempre todos eles estariam disponíveis depois ou antes da aula para uma possível reunião. Assim, Mateus recomendou que usassem a plataforma de videoconferencias Jitsi Meet, a qual um amigo tinha o apresentado na disciplina de calculo 2, para que pudessem se reunir a distância.
+As aulas da UnB acabaram de voltar e, no primeiro dia, a professora de cálculo 3 mandou os alunos se reunírem em grupos de até 5 pessoas. Após a formação dos grupos, Matheus e seus colegas estavam discutindo como seria feita a comunicação entre eles, visto que nem sempre todos eles estariam disponíveis depois ou antes da aula para uma possível reunião. Assim, Matheus recomendou que usassem a plataforma de videoconferências Jitsi Meet, a qual um amigo havia o apresentado na disciplina de cálculo 2, para que pudessem se reunir à distância.
 
 ### _**Roberta Matarazzo**_
 
-Com a vinda da pandemia, a professora Roberta se viu diante de um enorme problema. Como faria para dar suas aulas agora já que todos estavam de quarentena? Após muita pesquisa e e pedidos de recomendações à seus colegas de trabalho, Roberta encontrou a plataforma Jitsi Meet. Dessa forma, após testar um pouco para entender como funcionava, comunicou os seus alunos de que todas as aulas seriam ministradas por lá.
+Com a vinda da pandemia, a professora Roberta se viu diante de um enorme problema. Como faria para dar suas aulas agora, já que todos estavam de quarentena? Após muita pesquisa e pedidos de recomendações à seus colegas de trabalho, Roberta encontrou a plataforma Jitsi Meet. Dessa forma, após testar um pouco para entender como funcionava, comunicou os seus alunos de que todas as aulas seriam ministradas por lá.
 
 ### _**Marcela Hardt**_
 
@@ -170,10 +170,12 @@ Com o surgimento do novo coronavírus e a vinda da pandemia, Marcela e seus cole
 
 ### _**Fernanda Maia**_
 
-Fernanda é uma estudante do ensino médio, e logo em seu primeiro ano nessa nova fase de aprendizado, veio a pandemia. Após muitas dúvidas de como ia fazer para estudar remotamente, visto que mesmo cedo já estava preocupada com o Enem, seus professores acabaram por achar uma solução. A plataforma de videoconferência  Jistsi Meet seria usada para o ministro das aulas remotas, para que nenhum prejuízo no aprendizado ocorresse. Assim, por meio de seu tablet Fernanda foi capaz de acompanhar todas as aulas e começar a se preparar para o tão esperado vetibular. 
+Fernanda é uma estudante do ensino médio, e logo em seu primeiro ano nessa nova fase de aprendizado, veio a pandemia. Após muitas dúvidas de como ia fazer para estudar remotamente, visto que mesmo cedo já estava preocupada com o ENEM, seus professores acabaram por achar uma solução. A plataforma de videoconferência  Jitsi Meet seria usada para a condução das aulas remotas, para que nenhum prejuízo ao aprendizado ocorresse. Assim, por meio de seu tablet Fernanda foi capaz de acompanhar todas as aulas e começar a se preparar para o tão esperado vetibular. 
+
 ### _**Valentina Meire**_
 
-Valentina, por conta da pandemia e da quarentena, estava morrendo de saudades de seus avós, já que, pela segurança deles não estava podendo visitá-los. Assim, os pais da Valentina tiveram uma idéia para aplacar um pouco esse sentimento. Eles utilizariam a plataforma Jistsi Meet, recomendada por uma antigo amigo da família, para realizar uma videoconferência com os parentes distantes. Então, com a acessoria de seus pais, a menina foi capaz de conversar e visualizar seus avós, reduzindo um pouco a distância que esses novos tempos trouxeram.
+Valentina, por conta da pandemia e da quarentena, estava morrendo de saudades de seus avós já que, pela segurança deles, não estava podendo visitá-los. Assim, os pais da Valentina tiveram uma ideia para aplacar um pouco esse sentimento. Eles utilizariam a plataforma Jitsi Meet, recomendada por uma antigo amigo da família, para realizar uma videoconferência com os parentes distantes. Então, com a assessoria de seus pais, a menina foi capaz de conversar e visualizar seus avós, reduzindo um pouco a distância que esses novos tempos trouxeram.
+
 ## Gravação
 
 [![Elicitação de Requisitos - Storytelling/Personas - Grupo 6 - Jitsi Meet](https://img.youtube.com/vi/OGWxOBh_2kQ/0.jpg)](https://www.youtube.com/watch?v=OGWxOBh_2kQ)
