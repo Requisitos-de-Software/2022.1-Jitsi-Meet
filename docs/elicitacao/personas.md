@@ -18,12 +18,9 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 1: Estudante de Graduação**
 
-<figure>
+![Persona 1: Estudante de Graduação](../assets/personas/persona1.png){width="900"}
+*Persona 1: Estudante de Graduação* 
 
-<img src="../assets/personas/persona1.png" alt="Persona 1: Estudante de Graduação" style="width:25%">
-<figcaption align = "left"><b>Persona 1: Estudante de Graduação</b></figcaption>
-
-</figure>
 
 **Nome Fictício:** Matheus García
 
@@ -45,12 +42,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 2: Professora Universitária**
 
-<figure>
-
-<img src="../assets/personas/persona2.png" alt="Persona 2: Professora Universitária" style="width:25%">
-<figcaption align = "left"><b>Persona 2: Professora Universitária</b></figcaption>
-
-</figure>
+![Persona 2: Professora Universitária](../assets/personas/persona2.png){width="900"}
+*Persona 2: Professora Universitária* 
 
 **Nome Fictício:** Roberta Matarazzo
 
@@ -73,12 +66,9 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 3: Empresária do Setor Bancário**
 
-<figure>
 
-<img src="../assets/personas/persona3.png" alt="Persona 3: Empresária do Setor Bancário" style="width:25%">
-<figcaption align = "left"><b>Persona 3: Empresária do Setor Bancário</b></figcaption>
-
-</figure>
+![Persona 3: Empresária do Setor Bancário](../assets/personas/persona3.png){width="900"}
+*Persona 3: Empresária do Setor Bancário* 
 
 **Nome Fictício:** Marcela Hardt
 
@@ -100,12 +90,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Persona 4: Estudante do Ensino Médio**
 
-<figure>
-
-<img src="../assets/personas/persona4.png" alt="Persona 4: Estudante do Ensino Médio" style="width:25%">
-<figcaption align = "left"><b>Persona 4: Estudante do Ensino Médio</b></figcaption>
-
-</figure>
+![Persona 4: Estudante do Ensino Médio](../assets/personas/persona4.png){width="900"}
+*Persona 4: Estudante do Ensino Médio* 
 
 **Nome Fictício:** Fernanda Maia
 
@@ -127,12 +113,8 @@ Personas são, em resumo, _modelos_ que buscam representar o modo como os usuár
 
 ### **Antipersona: Criança sem Experiência**
 
-<figure>
-
-<img src="../assets/personas/antipersona.png" alt="Antipersona: Criança sem Experiência" style="width:25%">
-<figcaption align = "left"><b>Antipersona: Criança sem Experiência</b></figcaption>
-
-</figure>
+![Antipersona: Criança sem Experiência](../assets/personas/antipersona.png){width="900"}
+*Antipersona: Criança sem Experiência* 
 
 **Nome Fictício:** Valentina Meire
 
@@ -188,16 +170,12 @@ Abaixo estão os requisitos elicitados com a técnica do Storytelling utilizando
 
 Os requisitos estão identificados sequencialmente pela sigla _"STXX"_ (onde o _XX_ indica a numeração do requisito). Além disso, há a separação dos requisitos em **Funcionais** _(RFXX)_  e em **Não Funcionais** _(RNFXX)_.
 
-<figure>
-
-<img src="../assets/elicitacao/elicitacao_storytelling.png" alt="Elicitação realizada com a técnica Storytelling" style="width:50%">
-<figcaption><b>Elicitação realizada com a técnica Storytelling</b></figcaption>
-
-</figure>
+![Elicitação realizada com a técnica Storytelling](../assets/elicitacao/elicitacao_storytelling.png){width="900"}
+*Elicitação realizada com a técnica Storytelling* 
 
 ---
 
-# MosCoW
+# MoSCoW
 
 ## Introdução
 Tendo base no repositório da aplicação Triagil,é possível se constatar que o MoSCoW é um método de priorização utilizado para especificar os requisitos de acordo com a sua criticidade e seu valor de negócio. Facilita a priorização do escopo de forma a dividir quais tarefas são de suma importância para o sucesso do projeto e quais poderiam ser descartadas caso o mesmo sofra algum tipo de mudança de prazo e/ou perda de recursos. MoSCoW é um aconimo para as 4 categorias de requisitos utilizados na predileção: **M** de *must have*, **S** de *should have*, **C** de *could have* e **W** de *wont't have ou would like*, como comumente é usado. Portanto, a criticidade e relevância dos requisitos são classificados por:
@@ -216,12 +194,8 @@ Para a priorização dos requisitos do projeto Jitsi Meet foram  utilizados apen
 
 Abaixo estão os requisitos elicitados com a técnica do Storytelling e priorizados com a técnica _MoSCoW_. A priorização está dividida entre os três termos adotados na técnica: **Must**, **Could** e **Would**.
 
-<figure>
-
-<img src="../assets/elicitacao/priorizacao_storytelling_moscow.png" alt="Priorização realizada com a técnica MosCoW" style="width:50%">
-<figcaption><b>Priorização realizada com a técnica MosCoW</b></figcaption>
-
-</figure>
+![Priorização realizada com a técnica MosCoW](../assets/elicitacao/priorizacao_storytelling_moscow.png){width="900"}
+*Priorização realizada com a técnica MosCoW* 
 
 ---
 
