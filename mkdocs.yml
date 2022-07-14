@@ -22,5 +22,7 @@ nav:
         - Rich Picture: ./preRastreabilidade/richPicture.md
    - Elicitação de Requisitos:
         - Análise de Protocolo: ./elicitacao/analiseProtocolo.md
+        - Brainstorming: ./elicitacao/brainstorming.md
+        - Personas e Storytelling: ./elicitacao/personas.md
 markdown_extensions:
-   - attr_list
+  - attr_list
