@@ -13,12 +13,14 @@ nav:
    - Apresentações:
         - Primeira Apresentação: ./apresentacoes/apresentacao1.md
    - Planejamento:
-         - Metodologia: ./planejamento/metodologia.md
-         - Ferramentas Utilizadas: ./planejamento/ferramentas.md
-         - Cronograma: ./planejamento/cronograma.md
-         - Heatmap: ./planejamento/heatmap.md
-         - Políticas: ./planejamento/politicas.md
+        - Metodologia: ./planejamento/metodologia.md
+        - Ferramentas Utilizadas: ./planejamento/ferramentas.md
+        - Cronograma: ./planejamento/cronograma.md
+        - Heatmap: ./planejamento/heatmap.md
+        - Políticas: ./planejamento/politicas.md
    - Pré-Rastreabilidade:
-         - Rich Picture: ./preRastreabilidade/richPicture.md
+        - Rich Picture: ./preRastreabilidade/richPicture.md
+   - Elicitação de Requisitos:
+        - Análise de Protocolo: ./elicitacao/analiseProtocolo.md
 markdown_extensions:
-  - attr_list
+   - attr_list
