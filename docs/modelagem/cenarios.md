@@ -27,6 +27,7 @@ A descrição do cenário se dá pela tabela:
 | Restrições | _descrição das restrições_          |
 | Exceções   | _descrição da exceção_              |
 
+_Tabela 2: Legenda dos Cenários_
 ## Resultados
 
 ### Cenário 01 - Criação de uma sala
