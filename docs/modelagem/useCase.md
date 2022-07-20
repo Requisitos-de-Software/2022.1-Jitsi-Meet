@@ -4,13 +4,15 @@
 
 | Versão | Data  |                           Modificação                           |             Autor              |
 | ------ | ----- | :-------------------------------------------------------------: | :----------------------------: |
-| 1.0    | 19/07 |               Criação do Use Case                | Felipe Moura e Gabriel Mariano |
+| 1.0 | 19/07 |               Criação do Use Case                | Felipe Moura e Gabriel Mariano |
+| 1.1 | 19/07 |               Revisão da doc               | Gabriel Sabanai |
+
 
 _Tabela 1: Versionamento_
 
 ## Introdução
 
-De acordo com definição do [SEVOCAB](https://pascal.computer.org/sev_display/printSearch.action?term=use+case&source=), um _Use Case_ é uma descrição das ações requisitadas de um sistema. Deste modo, este artefato busca, através da representação com um Diagrama de Caso de Uso, representar os _Use Cases_ do sistema em questão: o Jitsi Meet. Todos os _Use Cases_ criados foram baseados nos [requisitos elicitados](../elicitacao/requisitoselicitados.md) pelo grupo
+De acordo com definição do [SEVOCAB](https://pascal.computer.org/sev_display/printSearch.action?term=use+case&source=), um _Use Case_ é uma descrição das ações requisitadas de um sistema. Deste modo, este artefato busca, através da representação com um Diagrama de Caso de Uso, representar os _Use Cases_ do sistema em questão: o Jitsi Meet. Todos os _Use Cases_ criados foram baseados nos [requisitos elicitados](../elicitacao/requisitoselicitados.md) pelo grupo.
 
 ## Metodologia
 
@@ -21,7 +23,7 @@ Um Diagrama de Caso de Uso é composto basicamente pelos _**Use Cases**_, pelos 
 
 ## Use Cases
 
-Abaixo estão listados todos os _Use Cases_ que serão representados no Diagrama de Caso de Uso.
+Abaixo estão listados todos os _Use Cases_ que serão representados no Diagrama de Caso de Uso:
 
 - Criar reunião
 
