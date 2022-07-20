@@ -4,7 +4,7 @@
 
 | Versão | Data  | Descrição            | Autor        |
 | ------ | :---: | -------------------- | ------------ |
-| 1.0    | 20/07 | Criação do documento | Samuel Avila |
+| 1.0    | 20/07 | Criação do documento | Samuel Avila e Felipe Moura |
 
 _Tabela 1: Versionamento_
 
@@ -31,179 +31,196 @@ A descrição do cenário se dá pela tabela:
 
 ### Cenário 01 - Criação de uma sala
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 01 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Criar uma sala de videoconferência.                  |
+| Contexto   | Local: Tela de início. Tempo: Indetermindao. Pré-condição: Acesso a internet. |
+| Atores     | Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone.|
+| Episódios  | Usuário querendo criar uma nova sala. |
+| Restrições | Acesso  internet diponível. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. |
 
 ### Cenário 02 - Acessar uma sala
 
-| Título     | Nome do Cenário |
-| ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Título     | Cenário 02 |
+ ---------- | --------------- |
+| Objetivo   | Entrar uma sala de videoconferência já criada.|
+| Contexto   | Local: Tela de início. Tempo: Indetermindao. Pré-condição: Acesso a internet e sala criada.|
+| Atores     | Convidado da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Sala criada.|
+| Episódios  | Usuário querendo entrar em uma sala já criada. |
+| Restrições | Acesso  internet diponível. Sala já criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Sala não criada.|
 
 ### Cenário 03 - Compartilhar a própria tela
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 03 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Comapartilhar a tela com outros usuários.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo compartilhar sua tela com outros usuários. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
 ### Cenário 04 - Desligar o som e o microfone
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 04 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Desligar o som e o microfone para que outros usuários não escutem.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo desligar seu som e microfone. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
 ### Cenário 05 - Sair da reunião
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 05 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Sair de uma reunião.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo sair da sala a qualquer momento. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
 ### Cenário 06 - "Quebrar" a reunião em salas menores separadas
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 06 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
-
+| Objetivo   | Gerar breakout rooms de uma sala ja criada.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Criador da sala querendo criar breakout rooms da sala já existente. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada. Não for o criador da sala|
 ### Cenário 07 - Falar por mensagens de texto
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 07 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Se comunicar com outros usuários por meio de mensagens de texto.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo mandar mensagens de texto em um chat. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
 ### Cenário 08 - Visualizar histórico de reuniões
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 08 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Vizualizar o histórico de reuniões já participadas.|
+| Contexto   | Local: Tela de início. Tempo: Indetermindao. Pré-condição: Acesso a internet . |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. |
+| Episódios  | Usuário querendo vizualizar as reuniões que já participou. |
+| Restrições | Acesso  internet diponível.  |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. |
 
 ### Cenário 09 - Visualizar calendário
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 09 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
-
+| Objetivo   | Vizualizar o calendário com as reuniões marcadas.|
+| Contexto   | Local: Tela de início. Tempo: Indetermindao. Pré-condição: Acesso a internet. |
+| Atores     | Convidado da sala. Criador da sala. Api do Google Agendas.|
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. |
+| Episódios  | Usuário querendo vizualizar marcadas no Google Agendas da conta sincronizada.  |
+| Restrições | Acesso  internet diponível.  |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. |
 ### Cenário 10 - Levantar a mão
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 10 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Pedir permissão de fala por meio de uma reação que simula o gesto de levantar a mão.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário pedindo a permissão para falar em uma reunião. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
+
 
 ### Cenário 11 - Criar enquetes
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 11 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Criar enquetes vizando a votação de algo ou alguma coisa.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Criador da sala querendo abrir uma enquete para a votação de algo. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
+
 
 ### Cenário 12 - Responder enquetes
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 12 |
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Responder a enquete criada pelo criador da sala.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Convidado querendo responder uma enquete em andamento. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
+
 
 ### Cenário 13 - Mudar planos de fundo do vídeo
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 13|
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Mudar o fundo do vídeo.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo modificar o fundo de sua câmera. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
-### Cenário 13 - Editar perfil
 
-| Título     | Nome do Cenário |
+### Cenário 14 - Editar perfil 
+
+| Título     | Cenário 14|
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Fazer alterações no perfil durante a reunião.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo editar o próprio perfil durante uma reunião. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
-### Cenário 14 - Configurar som e vídeo
+### Cenário 15 - Configurar som e vídeo
 
-| Título     | Nome do Cenário |
+| Título     | Cenário 15|
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Fazer congifurações no som e vídeo durante a videoconferência.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     | Convidado da sala. Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Usuário querendo configurar tanto entrada quanto saída de som e vídeo durante uma reunião. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
+### Cenário 16 - Moderação de outros usuários
 
-### Cenário 15 - Moderação de outros usuários
-
-| Título     | Nome do Cenário |
+| Título     | Cenário 16|
 | ---------- | --------------- |
-| Contexto   |                 |
-| Atores     |                 |
-| Recursos   |                 |
-| Episódios  |                 |
-| Restrições |                 |
-| Exceções   |                 |
+| Objetivo   | Ter poder de moderação sobre os convidados.|
+| Contexto   | Local: Sala de videoconferência. Tempo: Indetermindao. Pré-condição: Acesso a internet e estar em uma sala. |
+| Atores     |  Criador da sala. |
+| Recursos   | Internet disponível. Acesso a um computador ou smartphone. Estar em uma sala.|
+| Episódios  | Criador da sala querendo moderar os convidados. |
+| Restrições | Acesso  internet diponível. Estar em uma sala criada. |
+| Exceções   | Sem acesso à internet. Sem acesso a um computador ou smart fone. Não estar em uma sala criada.|
 
 ## Referências
 
