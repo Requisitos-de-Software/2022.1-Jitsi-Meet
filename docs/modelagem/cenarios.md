@@ -101,6 +101,7 @@ _Tabela 2: Legenda dos Cenários_
 | Episódios  | Criador da sala querendo criar breakout rooms da sala já existente. |
 | Restrições | Acesso  internet diponível. <br>Estar em uma sala criada. |
 | Exceções   | Sem acesso à internet. <br>Sem acesso a um computador ou smartphone. <br>Não estar em uma sala criada. <br>Não for o criador da sala.|
+
 ### Cenário 07 - Falar por mensagens de texto
 
 | Título     | Cenário 07 |
