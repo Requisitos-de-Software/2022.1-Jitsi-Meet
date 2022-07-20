@@ -136,6 +136,7 @@ _Tabela 2: Legenda dos Cenários_
 | Episódios  | Usuário querendo vizualizar marcadas no Google Agendas da conta sincronizada.  |
 | Restrições | Acesso  internet diponível.  |
 | Exceções   | Sem acesso à internet.<br> Sem acesso a um computador ou smartphone. |
+
 ### Cenário 10 - Levantar a mão
 
 | Título     | Cenário 10 |
@@ -211,6 +212,7 @@ _Tabela 2: Legenda dos Cenários_
 | Episódios  | Usuário querendo configurar tanto entrada quanto saída de som e vídeo durante uma reunião. |
 | Restrições | Acesso  internet diponível.<br> Estar em uma sala criada. |
 | Exceções   | Sem acesso à internet.<br> Sem acesso a um computador ou smartphone.<br> Não estar em uma sala criada.|
+
 ### Cenário 16 - Moderação de outros usuários
 
 | Título     | Cenário 16|
