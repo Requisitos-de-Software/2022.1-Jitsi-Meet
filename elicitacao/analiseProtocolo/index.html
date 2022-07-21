@@ -1,0 +1,1330 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/jitsiFavcon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Análise de Protocolo - Jitsi Meet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analise-de-protocolo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Jitsi Meet" class="md-header__button md-logo" aria-label="Jitsi Meet" data-md-component="logo">
+      
+  <img src="../../assets/jitsiLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jitsi Meet
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Análise de Protocolo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Início
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../apresentacoes/apresentacao1/" class="md-tabs__link">
+        Apresentações
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../planejamento/metodologia/" class="md-tabs__link">
+        Planejamento
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../preRastreabilidade/richPicture/" class="md-tabs__link">
+        Pré-Rastreabilidade
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Elicitação de Requisitos
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../modelagem/cenarios/" class="md-tabs__link">
+        Modelagem de Requisitos
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jitsi Meet" class="md-nav__button md-logo" aria-label="Jitsi Meet" data-md-component="logo">
+      
+  <img src="../../assets/jitsiLogo.png" alt="logo">
+
+    </a>
+    Jitsi Meet
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Apresentações
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Apresentações" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Apresentações
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao1/" class="md-nav__link">
+        Primeira Apresentação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao2/" class="md-nav__link">
+        Segunda Apresentação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao3/" class="md-nav__link">
+        Terceira Apresentação
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Planejamento
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Planejamento" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Planejamento
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/metodologia/" class="md-nav__link">
+        Metodologia
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/ferramentas/" class="md-nav__link">
+        Ferramentas Utilizadas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma/" class="md-nav__link">
+        Cronograma
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/heatmap/" class="md-nav__link">
+        Heatmap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/politicas/" class="md-nav__link">
+        Políticas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Pré-Rastreabilidade
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pré-Rastreabilidade" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pré-Rastreabilidade
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preRastreabilidade/richPicture/" class="md-nav__link">
+        Rich Picture
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Elicitação de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Elicitação de Requisitos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Elicitação de Requisitos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Análise de Protocolo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Análise de Protocolo
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    Metodologia
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verbalizacao-do-usuario" class="md-nav__link">
+    Verbalização do usuário
+  </a>
+  
+    <nav class="md-nav" aria-label="Verbalização do usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-da-analise-de-protocolo" class="md-nav__link">
+    Vídeo da Análise de Protocolo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrevista" class="md-nav__link">
+    Entrevista
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrevista">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-da-entrevista" class="md-nav__link">
+    Vídeo da entrevista
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-elicitados" class="md-nav__link">
+    Requisitos elicitados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brainstorming/" class="md-nav__link">
+        Brainstorming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personas/" class="md-nav__link">
+        Personas e Storytelling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requisitoselicitados/" class="md-nav__link">
+        Requisitos Elicitados
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Modelagem de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Modelagem de Requisitos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Modelagem de Requisitos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/cenarios/" class="md-nav__link">
+        Cenários
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/lexico/" class="md-nav__link">
+        Léxico
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/useCase/" class="md-nav__link">
+        Use Case
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/especificacaoSuplementar/" class="md-nav__link">
+        Especificação Suplementar
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    Versionamento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    Metodologia
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verbalizacao-do-usuario" class="md-nav__link">
+    Verbalização do usuário
+  </a>
+  
+    <nav class="md-nav" aria-label="Verbalização do usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-da-analise-de-protocolo" class="md-nav__link">
+    Vídeo da Análise de Protocolo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrevista" class="md-nav__link">
+    Entrevista
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrevista">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-da-entrevista" class="md-nav__link">
+    Vídeo da entrevista
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-elicitados" class="md-nav__link">
+    Requisitos elicitados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="analise-de-protocolo">Análise de Protocolo</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th align="center">Modificação</th>
+<th align="center">Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>05/07</td>
+<td align="center">Realização da Análise de Protocolo</td>
+<td align="center">Samuel Avila e Gabriel Sabanai</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>13/07</td>
+<td align="center">Elicitação de Requisitos e Documentação da Análise de Protocolo</td>
+<td align="center">Samuel Avila</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>13/07</td>
+<td align="center">Documentação da entrevista</td>
+<td align="center">Samuel Avila</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1: Versionamento</em></p>
+<h2 id="introducao">Introdução</h2>
+<p>Análise de protocolo é uma das técnicas para elicitar requisitos na qual solicitamos que um usuário execute as principais operações do sistema e verbalize (como se estivesse narrando) tudo que estiver fazendo.</p>
+<h2 id="metodologia">Metodologia</h2>
+<p>Para realizar essa técnica, uma usuária voluntária - que nunca havia usado o Jitsi - foi escolhida para seguir algumas instruções e, assim, foi observado como ela interagiu com a plataforma para fazer a elicitação dos requisitos. A dinâmica foi gravada e esse vídeo foi utilizado para fazer a documentação das ações realizadas e dos requisitos elicitados.</p>
+<table>
+<thead>
+<tr>
+<th>Membros Participantes</th>
+<th>Usuário Analisado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gabriel Sabanai e Samuel Avila</td>
+<td>Fernanda Gagliardi</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 2: Participantes na análise de protocolo.</em></p>
+<h2 id="observacoes">Observações</h2>
+<p>Foi possível observar que o aplicativo é intuitivo para uma pessoa que está relativamente acostumada com outras plataformas de vídeo conferência. Apesar da usuária ter demorado mais do que o esperado para nomear e começar a reunião, ela estava bastante confortável ao explorar todas as funcionalidades dentro da reunião.</p>
+<h2 id="verbalizacao-do-usuario">Verbalização do usuário</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Operação</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Acessar o Jitsi</td>
+<td>A plataforma é facilmente acessada pelo navegador</td>
+</tr>
+<tr>
+<td align="center">Nomear a reunião</td>
+<td>O Jitsi exige a nomeação da reunião, nesse momento o Jitsi gera um aviso sobre a segurança da reunião</td>
+</tr>
+<tr>
+<td align="center">Começar a reunião</td>
+<td>Gera o link da reunião e abre uma tela para fazer algumas ações antes de entrar na reunião, o usuário não precisa se cadastrar ou logar para entrar numa reunião</td>
+</tr>
+<tr>
+<td align="center">Preparar para a reunião</td>
+<td>Jitsi avisa sobre os status do microfone, pede permissões para utilizar os dispositivos e sugere utilização de extensões e integrações</td>
+</tr>
+<tr>
+<td align="center">Definir nome de usuário</td>
+<td>O usuário define o nome que será exibido aos outros participantes</td>
+</tr>
+<tr>
+<td align="center">Convidar outros participantes</td>
+<td>O Jitsi oferece a opção de copiar o link para enviar em outro meio de comunicação</td>
+</tr>
+<tr>
+<td align="center">Selecionar background virtual</td>
+<td>O Jitsi permite alterar o background do vídeo, oferece alguams opções de imagem, permite que o usuário faça upload de outras imagens para usar como background e mostra a pre-visualização do background</td>
+</tr>
+<tr>
+<td align="center">Entrar na reunião</td>
+<td>O usuário seleciona entrar na reunião, a preparação para a reunião (configurações, compartilhar reunião e estilização) não é obrigatória</td>
+</tr>
+<tr>
+<td align="center">Interagir com outro participante</td>
+<td>O usuário começa a explorar os botões e formas de interação na plataforma</td>
+</tr>
+<tr>
+<td align="center">Interações de áudio e vídeo</td>
+<td>O usuário explora os status do próprio áudio, observa o vídeo de outro integrante e gosta de como a plataforma da feedbacks de status</td>
+</tr>
+<tr>
+<td align="center">Compartilhar tela</td>
+<td>O usuário tenta compartilhar a tela e o Jitsi emite um alerta de permissão</td>
+</tr>
+<tr>
+<td align="center">Mandar e visualizar mensagens de texto</td>
+<td>O usuário vê a notificação do chat, visualiza e responde a mensagem</td>
+</tr>
+<tr>
+<td align="center">Criar e responder enquetes</td>
+<td>O usuário se surpreende com a possibilidade de criar enquetes, faz testes com a funcionalidade e gosta do resultado, ressaltando a facilidade e utilidade da mesma</td>
+</tr>
+<tr>
+<td align="center">Interagir com emotes</td>
+<td>O usário usa o "levantar a mão" e se alegra muito com a possibilidade de se expressar com emotes e sons</td>
+</tr>
+<tr>
+<td align="center">Alterar layout</td>
+<td>O usuário muda a disposição dos vídeos dos participantes, observando que consegue visualizar o próprio vídeo</td>
+</tr>
+<tr>
+<td align="center">Convidar participantes</td>
+<td>O Jitsi permite visualizar os atuais participantes (assim como os status de vídeo e áudio dos mesmos) e convidar pessoas durante a reunião</td>
+</tr>
+<tr>
+<td align="center">Criar breakout rooms</td>
+<td>O usuário cria salas separadas dentro da reunião e consegue movimentar os participantes entre elas</td>
+</tr>
+<tr>
+<td align="center">Gerenciar áudios e vídeos</td>
+<td>O usuário (moderador) consegue enviar uma notificação aos outros participantes pedindo para que abram o microfone e consegue fechar o microfone e vídeo de todos ou desabilitar áudio e vídeo de todos exceto um participante selecionado</td>
+</tr>
+<tr>
+<td align="center">Configurar reunião</td>
+<td>O Jitsi permite que o moderador configure a reunião (sons de reação, visualização dos vídeos, status do microfone e vídeo)</td>
+</tr>
+<tr>
+<td align="center">Configurar perfil</td>
+<td>O Jitsi permite que o usuário altere o nome e associe um email a ele</td>
+</tr>
+<tr>
+<td align="center">Configurar dispositivos</td>
+<td>O Jitsi permite que o usuário altere as configurações de câmera, microfone e saída de áudio durante a reunião (também permitindo que o usuário faça testes de áudio)</td>
+</tr>
+<tr>
+<td align="center">Outras configurações</td>
+<td>O Jitsi permite que usuário altere as configurações de integração com calendário, sons e outros, porém o usuário não explorou essas funcionalidades</td>
+</tr>
+<tr>
+<td align="center">Mais ações</td>
+<td>O usuário utiliza o botão de "mais ações" e observa as funcionalidades: visualizar em tela cheia, gravar a reunião, compartilhar vídeo e visualizar status dos microfones</td>
+</tr>
+<tr>
+<td align="center">Visualizar status dos microfones</td>
+<td>O Jitsi permite que o usuário veja quanto tempo de fala cada participante teve na reunião</td>
+</tr>
+<tr>
+<td align="center">Expulsar participantes</td>
+<td>O Jitsi permite que o moderador expulse participantes da reunião</td>
+</tr>
+<tr>
+<td align="center">Encerrar reunião</td>
+<td>O usuário encerra a reunião e comenta que achou fácil utilizar o Jitsi</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 3: Documentação da análise de protocolo</em></p>
+<h3 id="video-da-analise-de-protocolo">Vídeo da Análise de Protocolo</h3>
+<p><a href="https://youtu.be/qnnkIhUYSos"><img alt="Análise de Protocolo" src="../../assets/elicitacao/analise-protocolo-thumb.webp" />
+</a></p>
+<p><em>Vídeo 1: thumbnail do vídeo da análise de protocolo</em></p>
+<h2 id="entrevista">Entrevista</h2>
+<p>Após a análise de protocolo, fizemos algumas perguntas para nosso usuário voluntário, essas perguntas nos ajudaram a chegar a alguns dos requisitos - principalmente os não-funcionais - elicitados</p>
+<h3 id="video-da-entrevista">Vídeo da entrevista</h3>
+<p><a href="https://youtu.be/hZ7Hnsjyrfk"><img alt="Entrevista" src="../../assets/elicitacao/entrevista-thumb.jpg" />
+</a></p>
+<p><em>Vídeo 2: thumbnail do vídeo da entrevista</em></p>
+<h2 id="requisitos-elicitados">Requisitos elicitados</h2>
+<p>A partir das observações feitas sobre a análise de protocolo, foi possível elicitar alguns requisitos e priorizá-los de acordo com o método MoSCoW.</p>
+<p><strong>Legenda</strong>:</p>
+<ul>
+<li>RF: Requisito funcional</li>
+<li>RNF: Requisito não-funcional</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">ID</th>
+<th>Descrição</th>
+<th align="center">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">RF01</td>
+<td>O Jitsi permite criação de reuniões</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF02</td>
+<td>O Jitsi permite que o usuário configure o próprio áudio e vídeo</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF03</td>
+<td>O Jitsi permite integração com calendário</td>
+<td align="center">Could</td>
+</tr>
+<tr>
+<td align="center">RF04</td>
+<td>O Jitsi permite a visualização do histórico de reuniões</td>
+<td align="center">Could</td>
+</tr>
+<tr>
+<td align="center">RF05</td>
+<td>O Jitsi permite que o usuário se identifique ou fique no anonimato</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF06</td>
+<td>O Jitsi permite que o usuário compartilhe o link da reunião, convidando outros participantes</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF07</td>
+<td>O Jitsi permite a personalização do vídeo do usuário</td>
+<td align="center">Could</td>
+</tr>
+<tr>
+<td align="center">RF08</td>
+<td>O Jitsi permite a interação entre os participantes por voz e vídeo</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF09</td>
+<td>O Jitsi permite que os usuários visualizem as telas uns dos outros</td>
+<td align="center">Should</td>
+</tr>
+<tr>
+<td align="center">RF10</td>
+<td>O Jitsi permite interação por texto entre os usuários</td>
+<td align="center">Should</td>
+</tr>
+<tr>
+<td align="center">RF11</td>
+<td>O Jitsi permite que enquetes sejam feitas e respondidas em tempo real</td>
+<td align="center">Could</td>
+</tr>
+<tr>
+<td align="center">RF12</td>
+<td>O Jitsi permite interação por emotes entre os usuários</td>
+<td align="center">Could</td>
+</tr>
+<tr>
+<td align="center">RF13</td>
+<td>O Jitsi permite a edição do layout para visualizar o próprio vídeo</td>
+<td align="center">Should</td>
+</tr>
+<tr>
+<td align="center">RF14</td>
+<td>O Jitsi permite a criação de breakout rooms</td>
+<td align="center">Could</td>
+</tr>
+<tr>
+<td align="center">RF15</td>
+<td>O Jitsi permite que o dono da sala tenha funções de moderador na reunião</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF16</td>
+<td>O Jitsi permite que o moderador gerencie os status de som e vídeo dos participantes da reunião</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RF17</td>
+<td>O Jitsi permite alterações no perfil durante a reunião</td>
+<td align="center">Should</td>
+</tr>
+<tr>
+<td align="center">RF18</td>
+<td>O Jitsi permite que o usuário saia a qualquer momento da reunião</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RNF01</td>
+<td>O Jitsi deve zelar pela privacidade dos usuários</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RNF02</td>
+<td>O Jitsi deve ter uma interface que facilite a visualização das mudanças de estado na reunião</td>
+<td align="center">Must</td>
+</tr>
+<tr>
+<td align="center">RNF03</td>
+<td>O Jitsi deve ser multiplataforma (acessível em navegadores e por aplicativo)</td>
+<td align="center">Should</td>
+</tr>
+<tr>
+<td align="center">RNF04</td>
+<td>O Jitsi deve permitir que o usuário altere configurações dos dispositivos de áudio e vídeo durante a reunião</td>
+<td align="center">Must</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 4: requisitos elicitados a partir da análise de protocolo</em></p>
+<h2 id="referencias">Referências</h2>
+<p>SERRANO, Maurício; SERRANO, Milene. Requisitos - Aula 07. 1º/2019. 50 slides. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.</p>
+<p>DUOLINGO. Disponível em: (https://requisitos-de-software.github.io/2019.2-Duolingo/elicitacao/AnaliseDeProtocolo/)[https://requisitos-de-software.github.io/2019.2-Duolingo/elicitacao/AnaliseDeProtocolo/]. Acessado em: 07 de julho de 2022.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../preRastreabilidade/richPicture/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Rich Picture" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Rich Picture
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../brainstorming/" class="md-footer__link md-footer__link--next" aria-label="Next: Brainstorming" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Brainstorming
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
